@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person =  {
+            Maumat:"Đen",
+            Mauda:"Vàng", 
+            Tuoi:40
+        }
+        //Duyệt Đối tượng
+        for(let i in person){
+            console.log(i)
+        }
+        // Thêm giá trị
+            //Cách 1
+        person.gioitinh = "Nam"
+            // Cách 2
+        person["Chieucao"] = 175
+
+        // Tìm kiếm
+            //Cách 1
+        let ketqua = "Canang" in person
+            //Cách 2
+        let ketqua2 = person.hasOwnProperty("Mauda")
+
+        // Xóa
+        delete person.Tuoi
+        delete person["Chieucao"]
+        
+        console.log(person)
+    </script>
+</body>
+</html>

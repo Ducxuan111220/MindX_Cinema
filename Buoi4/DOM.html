@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Xin chào các bạn</p>
+    <p class="name">Tôi là Nam</p>
+    <p id="class">Tôi lớp 10A3</p>
+    <p class="name">Tôi học trường Nguyễn Trãi</p>
+
+    <script>
+        //Chọn đối tượng
+        object1 = document.getElementById("class") //Trả về đối tượng cụ thể
+        object2 =  document.getElementsByTagName("p") //Trả về danh sách
+        object3 = document.getElementsByClassName("name") //Trả về danh sách
+        object4 = document.querySelector(".name") //Trả về đối tượng đầu tiên tìm thấy
+
+        //Tạo đối tượng + thay đổi style
+        let gioitinh = document.createElement("h1")
+        gioitinh.innerHTML = "Nam"
+        document.body.appendChild(gioitinh)
+        gioitinh.style.color = "Red"
+
+    </script>
+</body>
+</html>

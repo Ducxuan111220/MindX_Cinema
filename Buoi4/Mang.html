@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tạo danh sách
+        let quacam = ["Cam", "Vang", 40]
+        //Truy vấn
+        console.log(quacam[1])
+        //Duyệt mảng
+        for(let i =0; i < quacam.length; i++){
+            console.log(quacam[i])
+        }
+        //Thêm phần tử vào mảng
+            //Cuối mảng
+        quacam.push("11/12/2025")
+            //Vị trí mong muốn
+        quacam.splice(2,0,35000)
+
+        //Thay thế phần tử
+            //Cách 1
+        quacam[3] = 35
+            //Cách 2
+        quacam.splice(2,1,40000)
+
+        //Tìm kiếm
+        let ketqua = quacam.indexOf("Cam") //0
+
+        //Xóa
+        quacam.splice(1,1)
+        console.log(quacam)
+    </script>
+</body>
+</html>
